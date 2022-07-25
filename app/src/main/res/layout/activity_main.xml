@@ -45,9 +45,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="35dp"
-        android:backgroundTint="#0ef0bf"
+        android:backgroundTint="#1CDA0F"
         android:text="Login"
         android:textSize="18sp"
+        app:cornerRadius="50dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/pass" />
 

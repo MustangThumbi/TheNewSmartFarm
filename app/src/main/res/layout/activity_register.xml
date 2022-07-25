@@ -53,8 +53,8 @@
 
     <Spinner
         android:id="@+id/role"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="377dp"
+        android:layout_height="36dp"
         android:layout_below="@+id/email"
         android:layout_marginTop="15dp" />
 
