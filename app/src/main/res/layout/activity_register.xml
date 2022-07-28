@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+<RelativeLayout
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,14 +11,15 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Register here"
-        android:textSize="30sp"
-        android:layout_marginTop="25dp"
         android:layout_centerHorizontal="true"
-        android:id="@+id/text"
-        />
+        android:layout_marginTop="25dp"
+        android:textStyle="bold"
+        android:textColor="#11A307"
+        android:text="Register here"
+        android:textSize="30sp" />
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -67,15 +71,16 @@
         android:id="@+id/livestock"
         android:layout_marginTop="40dp"/>
     <Button
+        android:id="@+id/register"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/confPwd"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="#11A307"
         android:text="REGISTER"
         android:textSize="18sp"
-        android:layout_below="@+id/confPwd"
-        android:layout_marginTop="35dp"
-        android:id="@+id/register"
-        android:backgroundTint="#0ef0bf"/>
-        />
-
+        app:cornerRadius="40dp" />
+    />
 
 </RelativeLayout>
+</ScrollView>

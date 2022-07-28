@@ -4,66 +4,74 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:backgroundTint="#F8DFE8DF"
+    android:foregroundTint="#100F0F"
     android:padding="15dp"
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Reset here"
-        android:textSize="30sp"
-        android:layout_marginTop="35dp"
         android:layout_centerHorizontal="true"
-        android:id="@+id/text"
-        />
+        android:layout_marginTop="35dp"
+        android:text="Reset here"
+        android:textStyle="bold"
+        android:textColor="#11A307"
+        android:textSize="30sp" />
+
     <EditText
+        android:id="@+id/email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/text"
+        android:layout_marginTop="50dp"
         android:hint="Email"
         android:inputType="textEmailAddress"
-        android:layout_below="@+id/text"
-        android:id="@+id/email"
-        android:layout_marginTop="50dp"/>
+        android:minHeight="48dp" />
 
     <EditText
+        android:id="@+id/pwd"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/email"
+        android:layout_marginTop="50dp"
         android:hint="New  Password"
         android:inputType="textPassword"
-        android:layout_below="@+id/email"
-        android:id="@+id/pwd"
-        android:layout_marginTop="50dp"/>
+        android:minHeight="48dp" />
 
     <EditText
+        android:id="@+id/confPwd"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/pwd"
+        android:layout_marginTop="50dp"
         android:hint="Confirm New Password"
         android:inputType="textPassword"
-        android:layout_below="@+id/pwd"
-        android:id="@+id/confPwd"
-        android:layout_marginTop="50dp"/>
+        android:minHeight="48dp" />
 
     <Button
+        android:id="@+id/reset"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="RESET"
-        android:textSize="18sp"
         android:layout_below="@+id/confPwd"
-        android:layout_marginTop="35dp"
-        android:id="@+id/reset"
-        android:backgroundTint="#0ef0bf"/>
+        android:layout_marginTop="15dp"
+        android:backgroundTint="#11A307"
+        android:text="REGISTER"
+        android:textSize="18sp"
+        app:cornerRadius="40dp" />
     />
 
 
     <TextView
+        android:id="@+id/login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Back to login"
-        android:textSize="20sp"
-        android:layout_marginTop="35dp"
-        android:layout_centerHorizontal="true"
-        android:id="@+id/login"
         android:layout_below="@+id/reset"
-        />
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:backgroundTint="#DDDADA"
+        android:text="Back to login"
+        android:textSize="20sp" />
 
 </RelativeLayout>

@@ -11,7 +11,9 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textColor="@color/teal_700"
+        android:textStyle="bold"
+        android:textColor="#11A307"
+        app:cornerRadius="50dp"
         android:text="Fill to enter the Total Input price"
         android:textSize="25dp"
         />
@@ -45,6 +47,10 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
+        android:backgroundTint="#1CDA0F"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        app:cornerRadius="50dp"
         android:text="Submit" />
 
   </LinearLayout>

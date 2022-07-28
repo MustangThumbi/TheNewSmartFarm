@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<LinearLayout
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
@@ -8,38 +11,109 @@
     android:layout_height="match_parent"
     tools:context=".Dashboard">
 
-    <Button
+    <ImageButton
         android:id="@+id/ChickenDir"
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:onClick="newchicken"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/chickens"
+        android:scaleType="centerInside"/>
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:text="CHICKEN" />
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textColor="#1CDA0F"
+        android:text="CHICKEN"
+        />
 
-    <Button
+<!--    <Button-->
+<!--        android:id="@+id/ChickenDir"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_marginLeft="10dp"-->
+<!--        android:layout_marginRight="10dp"-->
+<!--        android:text="CHICKEN" />-->
+
+    <ImageButton
         android:id="@+id/CattleDir"
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:onClick="newcattle"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/cow"
+        android:scaleType="centerInside"/>
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:text="Cattle" />
-    <Button
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textColor="#1CDA0F"
+        android:text="CATTLE"/>
+
+<!--    <Button-->
+<!--        android:id="@+id/CattleDir"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_marginLeft="10dp"-->
+<!--        android:layout_marginRight="10dp"-->
+<!--        android:text="Cattle" />-->
+
+    <ImageButton
         android:id="@+id/PigsDir"
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:layout_marginTop="20dp"
+        android:adjustViewBounds="true"
+       android:onClick="newpig"
+        android:scaleType="centerInside"
+        android:src="@drawable/pigs" />
+
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:text="Pigs" />
-    <Button
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textColor="#1CDA0F"
+        android:text="PIGS"/>
+<!--    <Button-->
+<!--        android:id="@+id/PigsDir"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_marginLeft="10dp"-->
+<!--        android:layout_marginRight="10dp"-->
+<!--        android:text="Pigs" />-->
+    <ImageButton
         android:id="@+id/goatsDir"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="250dp"
+        android:onClick="newgoat"
         android:layout_marginTop="20dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:text="Goats" />
+        android:scaleType="centerInside"
+        android:src="@drawable/goats" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textColor="#1CDA0F"
+        android:text="GOATS"/>
+<!--    <Button-->
+<!--        android:id="@+id/goatsDir"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_marginLeft="10dp"-->
+<!--        android:layout_marginRight="10dp"-->
+<!--        android:text="Goats" />-->
 
 </LinearLayout>
+</ScrollView>

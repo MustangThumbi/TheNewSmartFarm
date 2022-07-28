@@ -10,9 +10,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
 
+
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
+
+
 
             <DatePicker
                 android:id="@+id/calendar"
@@ -119,6 +122,10 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/price"
                 android:layout_marginTop="17dp"
+                android:backgroundTint="#1CDA0F"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                app:cornerRadius="50dp"
                 android:text="SUBMIT" />
 
             <Button
@@ -127,6 +134,10 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/submit1"
                 android:layout_marginTop="17dp"
+                android:backgroundTint="#1CDA0F"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                app:cornerRadius="50dp"
                 android:text="Key In Monthly Costs" />
 
             <TextView
